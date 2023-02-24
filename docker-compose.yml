@@ -1,0 +1,8 @@
+services:
+  streamlit:
+    container_name: "Disaster_Classification"
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    ports:
+      - 8000:8501

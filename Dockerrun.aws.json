@@ -1,0 +1,14 @@
+{
+    "AWSEBDockerrunVersion":"1",
+    "Image":{
+        "Name": "praveensamudrala30/disaster-classif:latest",
+        "Update": "true"
+    },
+    "Ports": [
+        {
+            "ContainerPort":8501,
+            "HostPort":8500
+        }
+    ],
+    "Logging":"/var/log/nginx"
+}
