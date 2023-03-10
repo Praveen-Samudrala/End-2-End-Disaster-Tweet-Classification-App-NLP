@@ -57,30 +57,36 @@ def predict(text):
     input_tokens = tfidf.transform([text_cleaned])
 
     # MultiNB, Stacking, LogReg models predictions
-    mnb_predict = mnb.predict(input_tokens)
-    logreg_predict = logreg.predict(input_tokens)
     stack_predict = stack.predict(input_tokens)
-    return stack_predict
+    if stack_predict == 1: return """<h3 style="color:white;text-align:center;"> Indicates a Disaster </h3>"""
+    else: return """<h3 style="color:white;text-align:center;">Does not indicates a Disaster </h3>"""
 
 
 def main():
-    st.title("Tweet Classification To Identify Disaster")
     html_temp = """
     <div style="background-color:tomato;padding:10px">
-    <h2 style="color:white;text-align:center;">Streamlit Tweet Classification App </h2>
+    <h2 style="color:white;text-align:center;">Disaster Tweet Classification App </h2>
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     input_text = st.text_input('Enter new Tweet',"Type Here")
     
-    result=""
-    if st.button("Predict"):
-        pred = predict(input_text)
-        if pred == 1:
-            result = "It's a Disaster"
-        else:
-            result = "It's NOT a Disaster"
-    st.success(result)
+    with st.container():
+        with st.columns(5)[2]:
+            flag = st.button('Submit')
+
+    with st.container():
+        if flag:
+            result = predict(input_text)
+            st.markdown(result, unsafe_allow_html=True)
+
+    # if st.button("Predict"):
+    #     pred = predict(input_text)
+    #     if pred == 1:
+    #         result = "It's a Disaster"
+    #     else:
+    #         result = "It's NOT a Disaster"
+    # st.success(result)
     if st.button("About"):
         st.text("Built by Praveen Samudrala using Streamlit")
 

@@ -56,6 +56,7 @@ smart-open==6.3.0
 smmap==5.0.0
 srsly==2.4.5
 streamlit==1.18.1
+streamlit-lottie
 thinc==8.1.7
 threadpoolctl==3.1.0
 toml==0.10.2
