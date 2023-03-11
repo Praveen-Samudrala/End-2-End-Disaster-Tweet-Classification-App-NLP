@@ -77,6 +77,11 @@ A custom desinged Classifier built with Stacking Naive Bayes, Logistic Regressio
   title="Home Page"/>
 
 <img
+  src="https://github.com/Praveen-Samudrala/End-2-End-Disaster-Tweet-Classification-App-NLP/blob/main/images/homepage3.png"
+  alt="Home Page_3"
+  title="Home Page"/>
+
+<img
   src="https://github.com/Praveen-Samudrala/End-2-End-Disaster-Tweet-Classification-App-NLP/blob/main/images/result.png"
   alt="Predictor_1"
   title="Predictor"/>
