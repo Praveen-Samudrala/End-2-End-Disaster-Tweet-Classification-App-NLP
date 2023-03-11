@@ -12,7 +12,7 @@ A custom desinged Classifier built with Stacking Naive Bayes, Logistic Regressio
   * Distribution of target variable.
   * Visualization of various characteristics in Disaster and Non-disaster Tweets.
   * Looking at Tweets analyzing the necessary cleaning strategies.  
-  
+
 <img
   src="https://github.com/Praveen-Samudrala/End-2-End-Disaster-Tweet-Classification-App-NLP/blob/main/images/data1.png"
   alt="Data_Sample"
@@ -72,7 +72,7 @@ A custom desinged Classifier built with Stacking Naive Bayes, Logistic Regressio
   title="Home Page"/>
 
 <img
-  src="https://github.com/Praveen-Samudrala/End-2-End-Disaster-Tweet-Classification-App-NLP/blob/main/images/homepage1.png"
+  src="https://github.com/Praveen-Samudrala/End-2-End-Disaster-Tweet-Classification-App-NLP/blob/main/images/homepage2.png"
   alt="Home Page_2"
   title="Home Page"/>
 
