@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "Entered Prebuild phase. Nothing here"
+  build:
+    commands:
+      - echo "Entered Build Stage."
+      - docker build -t classif_app_image
+      - echo "Image build complete!"
+  post_build:
+    commands:
+      - echo "Entered Post build phase."
+      - docker run -publish 8000:8501 classif_app_image
+      - echo "Docker image initiated to run."
