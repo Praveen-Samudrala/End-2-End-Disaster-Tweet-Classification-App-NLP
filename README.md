@@ -1,4 +1,4 @@
-<h1 align="center">Loan Defaulter Predictor App</h1>
+<h1 align="center">Disaster Tweet Classification App</h1>
 
 # Overview: 
 
